@@ -4,6 +4,7 @@ import { Badge } from "react-bootstrap";
 import Modal from "../Modal";
 import Cart from '../Screens/Cart'
 import { useCart } from "./ContextReducer";
+import Capture from "../Capture.svg"
 
 const Navbar = () => {
   let data = useCart();
@@ -19,6 +20,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-success">
         <div className="container-fluid">
           <Link className="navbar-brand" to="#">
+            <img src={Capture} alt=""style={{width:"55px", height:"50px"}} />
             Yammy
           </Link>
           <button
